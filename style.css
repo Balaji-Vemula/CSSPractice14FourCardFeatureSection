@@ -53,10 +53,6 @@ svg {
     max-width: 100%;
 }
 
-p {
-    font-size: var(--fs-paragraph);
-}
-
 body {
     margin: 0;
     padding: 0;
