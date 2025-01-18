@@ -76,3 +76,15 @@ body {
 .flex-direction-column {
     flex-direction: column;
 }
+
+main {
+    row-gap: 3rem;
+}
+
+.cards {
+    justify-content: space-evenly;
+}
+
+.middle-stack {
+    row-gap: 1.5rem;
+}
