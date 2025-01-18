@@ -21,9 +21,9 @@
     --font-family-default: 'Poppins', sans-serif;
 
     /* Font Sizes */
-    --fs-paragraph: 0.75rem;
+    --fs-paragraph: 0.9375rem;
     --fs-body: 0.9375rem;
-    --fs-heading1: 1.75rem;
+    --fs-heading1: 2rem;
     --fs-heading2: 1.25rem;
 
 
@@ -89,7 +89,7 @@ main {
 
 .card {
     padding: 2rem;
-    max-width: 300px;
+    max-width: 366px;
     box-shadow: 0px 13px 30px 13px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
@@ -106,7 +106,7 @@ main {
 }
 
 .card p {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 .cards {
@@ -137,8 +137,9 @@ main {
 }
 
 header {
-    max-width: 400px;
+    max-width: 570px;
     text-align: center;
+    padding: 2rem;
 }
 
 header p {
@@ -153,3 +154,12 @@ h1, h1 span {
 h1 span {
     font-weight: var(--fw-bolder);
 }
+
+@media (max-width: 768px) {
+    /* CSS for screens smaller than or equal to 768px (mobile and small tablets) */
+    .cards {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+  }
+  
