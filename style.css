@@ -21,8 +21,9 @@
     --font-family-default: 'Poppins', sans-serif;
 
     /* Font Sizes */
+    --fs-paragraph: 0.75rem;
     --fs-body: 0.9375rem;
-    --fs-heading1: 1.5rem;
+    --fs-heading1: 1.75rem;
     --fs-heading2: 1.25rem;
 
 
@@ -58,6 +59,11 @@ body {
     padding: 0;
     min-height: 100vh;
 }
+p {
+    font-size: var(--fs-paragraph);
+    color: var(--Grayish-Blue);
+    font-weight: var(--fw-bold);
+}
 
 .ht-100 {
     min-height: 100vh;
@@ -81,10 +87,69 @@ main {
     row-gap: 3rem;
 }
 
+.card {
+    padding: 2rem;
+    max-width: 300px;
+    box-shadow: 0px 13px 30px 13px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.card img {
+    float: right;
+}
+
+.card h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: var(--fs-heading2);
+    font-weight: var(--fw-bolder);
+    margin-bottom: .75rem;
+}
+
+.card p {
+    margin-bottom: 2rem;
+}
+
 .cards {
-    justify-content: space-evenly;
+    column-gap: 2rem;
 }
 
 .middle-stack {
     row-gap: 1.5rem;
+}
+
+.supervisor {
+    border-top: 5px solid var(--Cyan);
+    overflow: hidden;
+}
+
+.team-builder {
+    border-top: 5px solid var(--Red);
+    overflow: hidden;
+}
+.karma {
+    border-top: 5px solid var(--Orange);
+    overflow: hidden;
+}
+
+.calculator {
+    border-top: 5px solid var(--Blue);
+    overflow: hidden;
+}
+
+header {
+    max-width: 400px;
+    text-align: center;
+}
+
+header p {
+    margin-top: 1.5rem;
+}
+
+h1, h1 span {
+    font-size: var(--fs-heading1);
+    color: var(--Very-Dark-Blue);
+}
+
+h1 span {
+    font-weight: var(--fw-bolder);
 }
